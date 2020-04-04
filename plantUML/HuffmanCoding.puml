@@ -1,0 +1,117 @@
+@startuml
+
+object RootNode
+RootNode : value = 40
+
+object InternalNode1
+InternalNode1 : value = 17
+
+object InternalNode2
+InternalNode2 : value = 23
+
+RootNode --> InternalNode1 : 0
+RootNode --> InternalNode2 : 1
+
+object InternalNode3
+InternalNode3 : value = 8
+
+object space
+space : value = 9
+space : code = 01
+
+InternalNode1 --> InternalNode3 : 0
+InternalNode1 --> space : 1
+
+object InternalNode4
+InternalNode4 : value = 4
+
+object l
+l : value = 4
+l : code = 001
+
+InternalNode3 --> InternalNode4 : 0
+InternalNode3 --> l : 1
+
+object j
+j : value = 2
+j : code = 0000
+
+object v
+v : value = 2
+v : code = 0001
+
+InternalNode4 --> j : 0
+InternalNode4 --> v : 1
+
+object InternalNode5
+InternalNode5 : value = 10
+
+object InternalNode6
+InternalNode6 : value = 13
+
+InternalNode2 --> InternalNode5 : 0
+InternalNode2 --> InternalNode6 : 1
+
+object InternalNode7
+InternalNode7 : value = 5
+
+object i
+i : value = 5
+i : code = 101
+
+InternalNode5 --> InternalNode7 : 0
+InternalNode5 --> i : 1
+
+object o
+o : value = 2
+o : code = 1000
+
+object InternalNode8
+InternalNode8 : value = 3
+
+InternalNode7 --> o : 0
+InternalNode7 --> InternalNode8 : 1
+
+object u
+u : value = 1
+u : code = 10010
+
+object InternalNode9
+InternalNode9 : value = 2
+
+InternalNode8 --> u : 0
+InternalNode8 --> InternalNode9 : 1
+
+object d
+d : value = 1
+d : code = 100110
+
+object y
+y : value = 1
+y : code = 100111
+
+InternalNode9 --> d : 0
+InternalNode9 --> y : 1
+
+object a
+a : value = 5
+a : code = 110
+
+object InternalNode10
+InternalNode10 : value = 8
+
+InternalNode6 --> a : 0
+InternalNode6 --> InternalNode10 : 1
+
+object k
+k : value = 5
+k : code = 1110
+
+object e
+e : value = 5
+e : code = 1111
+
+InternalNode10 --> k : 0
+InternalNode10 --> e : 1
+
+@enduml

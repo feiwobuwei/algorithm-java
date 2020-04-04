@@ -1,0 +1,23 @@
+@startuml
+
+object A
+object B
+object C
+object D
+object E
+object F
+object G
+
+A - B : 5
+A - C : 7
+A - G : 2
+B - D : 9
+B - G : 3
+C - E : 8
+D - F : 4
+E - F : 5
+E - G : 4
+F -- G : 6
+
+
+@enduml

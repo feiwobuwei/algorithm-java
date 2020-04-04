@@ -1,0 +1,66 @@
+@startuml
+
+'也可以用大括号批量声明属性。
+'object user {
+'  name = "Dummy"
+'  id = 123
+'}
+
+object Node0
+Node0 : value = 67
+
+object Node1
+Node1 : value = 29
+
+object Node2
+Node2 : value = 38
+
+object Node3
+Node3 : value = 15
+
+object Node4
+Node4 : value = 23
+
+object Node5
+Node5 : value = 7
+
+object Node6
+Node6 : value = 8
+
+object Node7
+Node7 : value = 10
+
+object Node8
+Node8 : value = 13
+
+object Node9
+Node9 : value = 4
+
+object Node10
+Node10 : value = 6
+
+object Node11
+Node11 : value = 1
+
+object Node12
+Node12 : value = 3
+
+Node0 --> Node1
+Node0 --> Node2
+
+Node2 --> Node3
+Node2 --> Node4
+
+Node3 --> Node5
+Node3 --> Node6
+
+Node4 --> Node7
+Node4 --> Node8
+
+Node7 --> Node9
+Node7 --> Node10
+
+Node9 --> Node11
+Node9 --> Node12
+
+@enduml
